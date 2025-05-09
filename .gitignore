@@ -1,0 +1,159 @@
+# PDF Q&A Application - Custom .gitignore
+# Created from https://www.gitignore.io with additional project-specific rules
+
+### Environment Files ###
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+.env.local
+
+### Configuration Files ###
+# Ignore sensitive configuration files
+*config.ini
+*secrets.ini
+*credentials.ini
+*connection.ini
+
+# Include example configuration files
+!example.ini
+!default_config.ini
+!sample_config.ini
+
+### Uploads and Data ###
+/uploads/
+/backend/uploads/
+*.pdf
+
+
+### Backend (Python/FastAPI) ###
+# Virtual Environments
+venv/
+env/
+ENV/
+.venv/
+.python-venv/
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+### Frontend (React) ###
+# Dependencies
+/frontend/node_modules
+/frontend/.pnp
+/frontend/.pnp.js
+
+# Testing
+/frontend/coverage
+
+# Production build
+/frontend/build
+/frontend/dist
+
+# Misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local development server data
+.vercel
+.netlify
+
+### IDE and Editor Files ###
+# VS Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# PyCharm/JetBrains
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea_modules/
+
+# MacOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+### Project-specific ###
+# Logs
+logs/
+*.log
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Keep these files in Git
+!README.md
+!LICENSE
+!requirements.txt
+!package.json
+!package-lock.json

@@ -1,0 +1,23 @@
+fastapi==0.109.2
+uvicorn==0.27.1
+python-multipart==0.0.9
+sqlalchemy==2.0.27
+psycopg2-binary==2.9.9
+python-dotenv==1.0.1
+langchain==0.1.9
+langchain-community==0.0.24
+langchain-core==0.1.27
+langchain-openai==0.0.8
+pypdf==4.0.1
+PyMuPDF==1.23.26
+pydantic==2.6.1
+chromadb==0.4.15
+sentence-transformers==2.2.2
+pytest==7.4.3
+httpx==0.25.1
+alembic==1.12.1
+--find-links https://download.pytorch.org/whl/torch_stable.html
+torch==2.1.0+cpu
+torchvision==0.16.0+cpu
+torchaudio==2.1.0+cpu
+google-generativeai==0.3.2 
