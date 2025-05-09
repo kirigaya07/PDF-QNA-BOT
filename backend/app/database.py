@@ -19,8 +19,6 @@ if not DATABASE_URL:
     logger.warning("DATABASE_URL not found in environment, using default")
     DATABASE_URL = "postgresql://postgres:postgres@localhost:5432/pdf_qa_db"
 
-logger.info(f"Using database URL: {DATABASE_URL.split('@')[0].split(':')[0]}:*****@{DATABASE_URL.split('@')[1] if '@' in DATABASE_URL else '(local)'}")
-
 # Create engine with proper PostgreSQL settings
 try:
     # Add connect_args to handle PostgreSQL-specific settings
