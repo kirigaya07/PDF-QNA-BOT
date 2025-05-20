@@ -27,7 +27,7 @@ class QAEngine:
             # Split the input text into chunks if it's too long
             if len(text) > 30000:  # Gemini has a context length limit
                 chunks = self.text_splitter.split_text(text)
-                text = "\n".join(chunks[:3])  # Use first 3 chunks to stay within limits
+                text = "\n".join(chunks[:5])  # Use first 5 chunks to stay within limits
 
             # Create the prompt
             prompt = f"""Based on the following text, please answer the question. 
